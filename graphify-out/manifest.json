@@ -1,0 +1,52 @@
+{
+  "NoteSmart/NoteSmart/ContentView.swift": {
+    "mtime": 1790462117.4314737,
+    "ast_hash": "4752046f3f674355d68213eff1f15079",
+    "semantic_hash": "4752046f3f674355d68213eff1f15079"
+  },
+  "NoteSmart/NoteSmart/Item.swift": {
+    "mtime": 1790461234.8594854,
+    "ast_hash": "608ae321170fdecff965454d1bee63c2",
+    "semantic_hash": "608ae321170fdecff965454d1bee63c2"
+  },
+  "NoteSmart/NoteSmart/NoteSmartApp.swift": {
+    "mtime": 1790461234.8574834,
+    "ast_hash": "47b3095f00149b401c2d2ffe5b8024c5",
+    "semantic_hash": "47b3095f00149b401c2d2ffe5b8024c5"
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/SignIn/Model/SignInUIState.swift": {
+    "mtime": 1790463272.1384776,
+    "ast_hash": "0b8876b7b07f5feb167bfe251a7b1f2e",
+    "semantic_hash": "0b8876b7b07f5feb167bfe251a7b1f2e"
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/SignIn/SIgnInView.swift": {
+    "mtime": 1790463272.1662023,
+    "ast_hash": "5054ba9db394bf6b3806b2eebbfbe42b",
+    "semantic_hash": "5054ba9db394bf6b3806b2eebbfbe42b"
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/SignIn/SignInViewModel.swift": {
+    "mtime": 1790463272.1432338,
+    "ast_hash": "93a6ede20fb1b83f8bfd0f4ffbc1de5b",
+    "semantic_hash": "93a6ede20fb1b83f8bfd0f4ffbc1de5b"
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/Welcome/WelcomeView.swift": {
+    "mtime": 1790462023.4402754,
+    "ast_hash": "47ef17ca01418dbbd37f391f502b55bc",
+    "semantic_hash": "47ef17ca01418dbbd37f391f502b55bc"
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/Welcome/WelcomeViewModel.swift": {
+    "mtime": 1790462023.435032,
+    "ast_hash": "1226044f53c892b37c4210956a1bef62",
+    "semantic_hash": "1226044f53c892b37c4210956a1bef62"
+  },
+  "NoteSmart/NoteSmartTests/NoteSmartTests.swift": {
+    "mtime": 1790461236.5695682,
+    "ast_hash": "e4b8b8fe4bfe9b05e2e375fb554b0ab8",
+    "semantic_hash": "e4b8b8fe4bfe9b05e2e375fb554b0ab8"
+  },
+  "NoteSmart/NoteSmartUITests/NoteSmartUITests.swift": {
+    "mtime": 1790461236.5798504,
+    "ast_hash": "e797880b2b989857ec411f16294506f2",
+    "semantic_hash": "e797880b2b989857ec411f16294506f2"
+  }
+}

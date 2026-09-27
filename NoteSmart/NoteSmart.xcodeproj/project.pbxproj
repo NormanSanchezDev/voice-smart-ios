@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin XCLocalSwiftPackageReference section */
+		AA0000010000000000000001 /* XCLocalSwiftPackageReference "../Packages/NoteSmartDomain" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/NoteSmartDomain;
+		};
+		AA0000020000000000000002 /* XCLocalSwiftPackageReference "../Packages/NoteSmartData" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/NoteSmartData;
+		};
+		AA0000030000000000000003 /* XCLocalSwiftPackageReference "../Packages/NoteSmartDesignSystem" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/NoteSmartDesignSystem;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA0000100000000000000010 /* NoteSmartDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NoteSmartDomain;
+		};
+		AA0000110000000000000011 /* NoteSmartData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NoteSmartData;
+		};
+		AA0000120000000000000012 /* DSTokens */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DSTokens;
+		};
+		AA0000130000000000000013 /* DSAtoms */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DSAtoms;
+		};
+		AA0000140000000000000014 /* DSMolecules */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DSMolecules;
+		};
+		AA0000150000000000000015 /* DSOrganisms */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DSOrganisms;
+		};
+		AA0000160000000000000016 /* DSTemplates */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DSTemplates;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin PBXBuildFile section */
+		AA0000200000000000000020 /* NoteSmartDomain in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000100000000000000010 /* NoteSmartDomain */; };
+		AA0000210000000000000021 /* NoteSmartData in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000110000000000000011 /* NoteSmartData */; };
+		AA0000220000000000000022 /* DSTokens in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000120000000000000012 /* DSTokens */; };
+		AA0000230000000000000023 /* DSAtoms in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000130000000000000013 /* DSAtoms */; };
+		AA0000240000000000000024 /* DSMolecules in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000140000000000000014 /* DSMolecules */; };
+		AA0000250000000000000025 /* DSOrganisms in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000150000000000000015 /* DSOrganisms */; };
+		AA0000260000000000000026 /* DSTemplates in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000160000000000000016 /* DSTemplates */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D24BF46430687CB4001EA99D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D24BF44A30687CB2001EA99D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D24BF45130687CB2001EA99D;
+			remoteInfo = NoteSmart;
+		};
+		D24BF46E30687CB4001EA99D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D24BF44A30687CB2001EA99D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D24BF45130687CB2001EA99D;
+			remoteInfo = NoteSmart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D24BF45230687CB2001EA99D /* NoteSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24BF46330687CB4001EA99D /* NoteSmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteSmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D24BF46D30687CB4001EA99D /* NoteSmartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteSmartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D24BF47330687CB4001EA99D /* Exceptions for "NoteSmart" folder in "NoteSmart" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D24BF45130687CB2001EA99D /* NoteSmart */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D24BF45430687CB2001EA99D /* NoteSmart */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D24BF47330687CB4001EA99D /* Exceptions for "NoteSmart" folder in "NoteSmart" target */,
+			);
+			path = NoteSmart;
+			sourceTree = "<group>";
+		};
+		D24BF46630687CB4001EA99D /* NoteSmartTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NoteSmartTests;
+			sourceTree = "<group>";
+		};
+		D24BF47030687CB4001EA99D /* NoteSmartUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NoteSmartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D24BF44F30687CB2001EA99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				AA0000200000000000000020 /* NoteSmartDomain in Frameworks */,
+				AA0000210000000000000021 /* NoteSmartData in Frameworks */,
+				AA0000220000000000000022 /* DSTokens in Frameworks */,
+				AA0000230000000000000023 /* DSAtoms in Frameworks */,
+				AA0000240000000000000024 /* DSMolecules in Frameworks */,
+				AA0000250000000000000025 /* DSOrganisms in Frameworks */,
+				AA0000260000000000000026 /* DSTemplates in Frameworks */,
+			);
+		};
+		D24BF46030687CB4001EA99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				AA0000200000000000000020 /* NoteSmartDomain in Frameworks */,
+				AA0000210000000000000021 /* NoteSmartData in Frameworks */,
+				AA0000220000000000000022 /* DSTokens in Frameworks */,
+				AA0000230000000000000023 /* DSAtoms in Frameworks */,
+				AA0000240000000000000024 /* DSMolecules in Frameworks */,
+				AA0000250000000000000025 /* DSOrganisms in Frameworks */,
+				AA0000260000000000000026 /* DSTemplates in Frameworks */,
+			);
+		};
+		D24BF46A30687CB4001EA99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D24BF44930687CB2001EA99D = {
+			isa = PBXGroup;
+			children = (
+				D24BF45430687CB2001EA99D /* NoteSmart */,
+				D24BF46630687CB4001EA99D /* NoteSmartTests */,
+				D24BF47030687CB4001EA99D /* NoteSmartUITests */,
+				D24BF45330687CB2001EA99D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D24BF45330687CB2001EA99D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D24BF45230687CB2001EA99D /* NoteSmart.app */,
+				D24BF46330687CB4001EA99D /* NoteSmartTests.xctest */,
+				D24BF46D30687CB4001EA99D /* NoteSmartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D24BF45130687CB2001EA99D /* NoteSmart */ = {
+			isa = PBXNativeTarget;
+			packageProductDependencies = (
+				AA0000100000000000000010 /* NoteSmartDomain */,
+				AA0000110000000000000011 /* NoteSmartData */,
+				AA0000120000000000000012 /* DSTokens */,
+				AA0000130000000000000013 /* DSAtoms */,
+				AA0000140000000000000014 /* DSMolecules */,
+				AA0000150000000000000015 /* DSOrganisms */,
+				AA0000160000000000000016 /* DSTemplates */,
+			);
+			buildConfigurationList = D24BF47430687CB4001EA99D /* Build configuration list for PBXNativeTarget "NoteSmart" */;
+			buildPhases = (
+				D24BF44E30687CB2001EA99D /* Sources */,
+				D24BF44F30687CB2001EA99D /* Frameworks */,
+				D24BF45030687CB2001EA99D /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				D24BF45430687CB2001EA99D /* NoteSmart */,
+			);
+			name = NoteSmart;
+			productName = NoteSmart;
+			productReference = D24BF45230687CB2001EA99D /* NoteSmart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D24BF46230687CB4001EA99D /* NoteSmartTests */ = {
+			isa = PBXNativeTarget;
+			packageProductDependencies = (
+				AA0000100000000000000010 /* NoteSmartDomain */,
+				AA0000110000000000000011 /* NoteSmartData */,
+				AA0000120000000000000012 /* DSTokens */,
+				AA0000130000000000000013 /* DSAtoms */,
+				AA0000140000000000000014 /* DSMolecules */,
+				AA0000150000000000000015 /* DSOrganisms */,
+				AA0000160000000000000016 /* DSTemplates */,
+			);
+			buildConfigurationList = D24BF47930687CB4001EA99D /* Build configuration list for PBXNativeTarget "NoteSmartTests" */;
+			buildPhases = (
+				D24BF45F30687CB4001EA99D /* Sources */,
+				D24BF46030687CB4001EA99D /* Frameworks */,
+				D24BF46130687CB4001EA99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D24BF46530687CB4001EA99D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D24BF46630687CB4001EA99D /* NoteSmartTests */,
+			);
+			name = NoteSmartTests;
+			productName = NoteSmartTests;
+			productReference = D24BF46330687CB4001EA99D /* NoteSmartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D24BF46C30687CB4001EA99D /* NoteSmartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D24BF47C30687CB4001EA99D /* Build configuration list for PBXNativeTarget "NoteSmartUITests" */;
+			buildPhases = (
+				D24BF46930687CB4001EA99D /* Sources */,
+				D24BF46A30687CB4001EA99D /* Frameworks */,
+				D24BF46B30687CB4001EA99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D24BF46F30687CB4001EA99D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D24BF47030687CB4001EA99D /* NoteSmartUITests */,
+			);
+			name = NoteSmartUITests;
+			productName = NoteSmartUITests;
+			productReference = D24BF46D30687CB4001EA99D /* NoteSmartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D24BF44A30687CB2001EA99D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					D24BF45130687CB2001EA99D = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					D24BF46230687CB4001EA99D = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = D24BF45130687CB2001EA99D;
+					};
+					D24BF46C30687CB4001EA99D = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = D24BF45130687CB2001EA99D;
+					};
+				};
+			};
+			buildConfigurationList = D24BF44D30687CB2001EA99D /* Build configuration list for PBXProject "NoteSmart" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D24BF44930687CB2001EA99D;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AA0000010000000000000001 /* XCLocalSwiftPackageReference "../Packages/NoteSmartDomain" */,
+				AA0000020000000000000002 /* XCLocalSwiftPackageReference "../Packages/NoteSmartData" */,
+				AA0000030000000000000003 /* XCLocalSwiftPackageReference "../Packages/NoteSmartDesignSystem" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D24BF45330687CB2001EA99D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D24BF45130687CB2001EA99D /* NoteSmart */,
+				D24BF46230687CB4001EA99D /* NoteSmartTests */,
+				D24BF46C30687CB4001EA99D /* NoteSmartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D24BF45030687CB2001EA99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		D24BF46130687CB4001EA99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		D24BF46B30687CB4001EA99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D24BF44E30687CB2001EA99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		D24BF45F30687CB4001EA99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		D24BF46930687CB4001EA99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D24BF46530687CB4001EA99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D24BF45130687CB2001EA99D /* NoteSmart */;
+			targetProxy = D24BF46430687CB4001EA99D /* PBXContainerItemProxy */;
+		};
+		D24BF46F30687CB4001EA99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D24BF45130687CB2001EA99D /* NoteSmart */;
+			targetProxy = D24BF46E30687CB4001EA99D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D24BF47530687CB4001EA99D /* Debug configuration for PBXNativeTarget "NoteSmart" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAFK7SAHVN;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NoteSmart/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.normansanchez.NoteSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		D24BF47630687CB4001EA99D /* Release configuration for PBXNativeTarget "NoteSmart" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAFK7SAHVN;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NoteSmart/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.normansanchez.NoteSmart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		D24BF47730687CB4001EA99D /* Debug configuration for PBXProject "NoteSmart" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = WAFK7SAHVN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D24BF47830687CB4001EA99D /* Release configuration for PBXProject "NoteSmart" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = WAFK7SAHVN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		D24BF47A30687CB4001EA99D /* Debug configuration for PBXNativeTarget "NoteSmartTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAFK7SAHVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.normansanchez.NoteSmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteSmart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NoteSmart";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		D24BF47B30687CB4001EA99D /* Release configuration for PBXNativeTarget "NoteSmartTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAFK7SAHVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.normansanchez.NoteSmartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NoteSmart.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NoteSmart";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		D24BF47D30687CB4001EA99D /* Debug configuration for PBXNativeTarget "NoteSmartUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAFK7SAHVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.normansanchez.NoteSmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = NoteSmart;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		D24BF47E30687CB4001EA99D /* Release configuration for PBXNativeTarget "NoteSmartUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WAFK7SAHVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.normansanchez.NoteSmartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = NoteSmart;
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D24BF44D30687CB2001EA99D /* Build configuration list for PBXProject "NoteSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24BF47730687CB4001EA99D /* Debug configuration for PBXProject "NoteSmart" */,
+				D24BF47830687CB4001EA99D /* Release configuration for PBXProject "NoteSmart" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		D24BF47430687CB4001EA99D /* Build configuration list for PBXNativeTarget "NoteSmart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24BF47530687CB4001EA99D /* Debug configuration for PBXNativeTarget "NoteSmart" */,
+				D24BF47630687CB4001EA99D /* Release configuration for PBXNativeTarget "NoteSmart" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		D24BF47930687CB4001EA99D /* Build configuration list for PBXNativeTarget "NoteSmartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24BF47A30687CB4001EA99D /* Debug configuration for PBXNativeTarget "NoteSmartTests" */,
+				D24BF47B30687CB4001EA99D /* Release configuration for PBXNativeTarget "NoteSmartTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		D24BF47C30687CB4001EA99D /* Build configuration list for PBXNativeTarget "NoteSmartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24BF47D30687CB4001EA99D /* Debug configuration for PBXNativeTarget "NoteSmartUITests" */,
+				D24BF47E30687CB4001EA99D /* Release configuration for PBXNativeTarget "NoteSmartUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D24BF44A30687CB2001EA99D /* Project object */;
+	validationLevel = 1;
+}

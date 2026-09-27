@@ -1,8 +1,7 @@
-# Graph Report - voice-smart-notes  (2026-09-27)
+# Graph Report - .  (2026-09-27)
 
 ## Corpus Check
-- 103 files · ~42,930 words
-- Verdict: corpus is large enough that graph structure adds value.
+- cluster-only mode — file stats not available
 
 ## Summary
 - 1163 nodes · 2746 edges · 52 communities (50 shown, 2 thin omitted)

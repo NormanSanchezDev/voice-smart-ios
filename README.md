@@ -125,8 +125,8 @@ depende de otra en la dirección equivocada.
 ## Capturas
 
 <!--
-Coloca las capturas en docs/screenshots/ y replaces los marcadores de abajo.
-Todavía no hay assets en el repositorio: 0 imágenes committeadas hasta la fecha.
+Coloca las capturas en docs/screenshots/ y sustituye los marcadores de abajo.
+El repositorio no tiene todavía ningún asset de imagen.
 -->
 
 | Splash | Captura | Editor | Vault |
@@ -297,7 +297,7 @@ Si editas un test de datos, edítalo en `Packages/NoteSmartData`, no en el symli
 
 ## Arquitectura
 
-Clean Architecture + MVVM, con las frontiers de paquete de SPM **haciendo cumplir** las
+Clean Architecture + MVVM, con las fronteras de paquete de SPM **haciendo cumplir** las
 reglas de dependencia en el compilador en vez de en la convención.
 
 ```
@@ -463,7 +463,7 @@ source: voice
 enriched: true
 audio: "3F2A1B4C-8E5D-4A7B-9C1D-2E6F8A0B3C5D.m4a"
 audio_duration: 47.28
-transcript: '[{"start":0.0,"duration":2.4,"text":"Hay que cerrar el roadmap antes del viernes."}]'
+transcript: '[{"confidence":0.94,"end":2.4,"start":0.0,"text":"Hay que cerrar el roadmap antes del viernes."}]'
 ---
 
 Hay que cerrar el roadmap antes del viernes. Elena se encarga de la parte de
@@ -677,10 +677,10 @@ voice-smart-ios/
 │   ├── design-system.md
 │   ├── presentacion.md
 │   ├── testing.md
+│   ├── releasing.md
 │   └── decisions/                    # ADR 0001 – 0005
 │
 ├── graphify-out/                     # grafo de conocimiento del repo
-│   ├── graph.json                    # 1 228 nodos · 2 817 aristas · 67 comunidades
 │   ├── GRAPH_REPORT.md
 │   └── graph.html
 │
@@ -761,7 +761,7 @@ tenerla.
    `Localizable.xcstrings`.
 6. **Un comentario explica el porqué, no el qué.** El código de este repo sigue esa
    convención: los comentarios de más valor son los que explican una decisión que parece
-   arbitraria, y casi todos están en el formato *«por qué no lo obviouso»*.
+   arbitraria, y casi todos tienen la forma *«por qué no lo obvio»*.
 
 ### Antes de abrir un PR
 
@@ -802,11 +802,16 @@ pensado para abrirse como vault en Obsidian.
 | [`design-system.md`](documentation/design-system.md) | Capas, tokens, `AdaptiveColor`, build de referencia |
 | [`testing.md`](documentation/testing.md) | Cómo correr cada suite, qué depende del simulador, qué sólo se verifica en dispositivo |
 | [`decisions/`](documentation/decisions/) | ADR 0001 – 0005, con contexto, decisión y consecuencias |
+| [`releasing.md`](documentation/releasing.md) | Qué vive en el `README`, qué en el `CHANGELOG` y qué en la documentación, y cómo preparar la siguiente versión |
 
 Y del graph:
 
-- [`graphify-out/GRAPH_REPORT.md`](graphify-out/GRAPH_REPORT.md) — 1 163 nodos, 2 746
-  aristas, 52 comunidades, god nodes, y **cero ciclos de importación**.
+- [`graphify-out/GRAPH_REPORT.md`](graphify-out/GRAPH_REPORT.md) — el informe del grafo de
+  conocimiento del repo: resumen, comunidades, god nodes, conexiones inesperadas y huecos
+  de conocimiento. **Cero ciclos de importación**, que es el dato que más cuesta
+  conseguir en una arquitectura por capas.
+- Los números viven en el informe, no aquí, porque este `README` está indexado en el graph:
+  cualquier cifra citada en este fichero la invalida su propia actualización.
 - `graphify query "<pregunta>"` para preguntas sobre el graph,
   `graphify explain "<nodo>"` para un nodo y sus vecinos,
   `graphify god-nodes --top 25` para los hubs arquitectónicos.
@@ -817,7 +822,7 @@ Y del graph:
 
 **NoteSmart** — tus notas de voz, en Markdown, en tu dispositivo.
 
-<sub>Hecho con SwiftUI, Swift 6 y la conviction de que la app
+<sub>Hecho con SwiftUI, Swift 6 y la convicción de que la app
 debería poder desaparecer sin que sus datos lo hagan.</sub>
 
 </div>

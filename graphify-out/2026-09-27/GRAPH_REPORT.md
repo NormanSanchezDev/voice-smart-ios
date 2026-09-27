@@ -1,70 +1,84 @@
-# Graph Report - .  (2026-09-27)
+# Graph Report - voice-smart-notes  (2026-09-27)
 
 ## Corpus Check
-- cluster-only mode — file stats not available
+- 117 files · ~61,687 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1163 nodes · 2746 edges · 52 communities (50 shown, 2 thin omitted)
-- Extraction: 88% EXTRACTED · 12% INFERRED · 0% AMBIGUOUS · INFERRED: 318 edges (avg confidence: 0.8)
+- 1343 nodes · 3014 edges · 71 communities (67 shown, 4 thin omitted)
+- Extraction: 89% EXTRACTED · 11% INFERRED · 0% AMBIGUOUS · INFERRED: 322 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5b86e21d`
+- Built from commit: `ac646f30`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - NoteSmartUITests
 - Foundation
-- AIAvailability
-- AudioFileRef
+- VaultTag
+- EnrichmentProgress
 - SwiftUI
-- AdaptiveColor
+- NoteSmart
 - .save
 - TranscriptSegment
-- VaultPath
+- FileNoteRepository
 - Note
-- DSNoteCard
-- DSRecordingButton
-- NoteID
+- NoteCardModel
+- AdaptiveColor
+- Añadido
 - AudioEngineRecorder
-- .enrich
+- Handler
 - RuleBasedNoteEnricher
-- NoteError
+- Stage
 - Testing
 - DSButton
-- Palette
+- Hashable
 - RTK Commands by Workflow
 - .fileName
 - DSListScaffold
 - GlassConfig
-- NoteCardModel
 - AppEnvironment
+- RecordViewModel
 - SplashView
 - Spacing.swift
 - NoteEditorViewModel
-- Task
-- RecordingsListView
+- AudioPlaybackController
+- NoteError
 - ADR 0001 — Arquitectura en capas y reglas de dependencia
 - ADR 0002 — El vault markdown es la fuente de verdad
 - ADR 0003 — IA on-device con piso determinista
-- DSEmptyState
+- RecordingsListView
 - ADR 0004 — Liquid Glass sólo en el chrome
 - ADR 0005 — Local-first sin autenticación
+- DSIconButton
 - AGENTS.md
 - PackageDescription
 - RecordHomeView
-- EnrichmentProgress
-- NoteFrontmatter
-- ProfileView
-- View
-- Hashable
-- DSCard
-- .callAsFunction
-- DSAudioLevelMeter
+- DSFlowLayout
 - Sendable
-- DSReadingColumn
-- VaultTag
+- app.js
+- VaultPath
+- NoteRepository
+- ProfileView
+- MarkdownEditingTests
+- NoteID
+- View
+- AudioFileRef
+- layout.py
+- Palette
+- Transcriber
+- DSTextField
+- Capa de datos
+- Design System
+- Typography
+- Task
+- Release y documentación pública
+- Presentación
+- NoteSmartApp
+- Arquitectura
+- .opencode/AGENTS.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `Note` - 63 edges
@@ -85,15 +99,15 @@
   NoteSmart/NoteSmart/Presentation/AppRootView.swift → Packages/NoteSmartDesignSystem/Sources/DSMolecules/DSEmptyState.swift
 - `.body` --calls--> `Task`  [INFERRED]
   NoteSmart/NoteSmart/Presentation/AppRootView.swift → Packages/NoteSmartDomain/Sources/UseCases/MarkdownEditing.swift
-- `.body` --calls--> `DSCard`  [INFERRED]
-  NoteSmart/NoteSmart/Presentation/Features/More/MoreView.swift → Packages/NoteSmartDesignSystem/Sources/DSAtoms/DSCard.swift
 - `.body` --calls--> `DSSectionHeader`  [INFERRED]
   NoteSmart/NoteSmart/Presentation/Features/More/MoreView.swift → Packages/NoteSmartDesignSystem/Sources/DSMolecules/DSEmptyState.swift
+- `.body` --calls--> `DSListScaffold`  [INFERRED]
+  NoteSmart/NoteSmart/Presentation/Features/More/MoreView.swift → Packages/NoteSmartDesignSystem/Sources/DSTemplates/DSListScaffold.swift
 
 ## Import Cycles
 - None detected.
 
-## Communities (52 total, 2 thin omitted)
+## Communities (71 total, 4 thin omitted)
 
 ### Community 0 - "NoteSmartUITests"
 Cohesion: 0.25
@@ -101,79 +115,79 @@ Nodes (3): NoteSmartUITests, XCTest, XCTestCase
 
 ### Community 1 - "Foundation"
 Cohesion: 0.08
-Nodes (16): AVFAudio, AVFoundation, DSOrganisms, Foundation, FoundationModels, NoteSmart, NoteBody, Bool (+8 more)
+Nodes (17): AVFAudio, AVFoundation, DSOrganisms, Foundation, FoundationModels, NoteSmart, AppErrorMessage, NoteBody (+9 more)
 
-### Community 2 - "AIAvailability"
-Cohesion: 0.13
-Nodes (16): NoteEnrichmentDraft, OnDeviceNoteEnricher, .availability, AsyncThrowingStream, Error, Locale, String, AIAvailability (+8 more)
+### Community 2 - "VaultTag"
+Cohesion: 0.14
+Nodes (12): Comparable, NoteEnrichmentDraft, OnDeviceNoteEnricher, .availability, AsyncThrowingStream, Error, Locale, String (+4 more)
 
-### Community 3 - "AudioFileRef"
-Cohesion: 0.26
-Nodes (9): AudioFileRef, Locale, URL, CreateNoteFromRecordingTests, FailingEnricher, InMemoryNoteRepository, StubEnricher, StubTranscriber (+1 more)
+### Community 3 - "EnrichmentProgress"
+Cohesion: 0.17
+Nodes (12): EnrichmentProgress, CreateNoteFromRecordingTests, EnrichTranscriptTests, FailingEnricher, InMemoryNoteRepository, StubEnricher, StubTranscriber, AsyncThrowingStream (+4 more)
 
 ### Community 4 - "SwiftUI"
-Cohesion: 0.23
+Cohesion: 0.21
 Nodes (5): DSAtoms, DSMolecules, DSTemplates, DSTokens, SwiftUI
 
-### Community 5 - "AdaptiveColor"
-Cohesion: 0.31
-Nodes (6): EnvironmentValues, AdaptiveColor, Color, ShapeStyle, Double, UInt32
+### Community 5 - "NoteSmart"
+Cohesion: 0.05
+Nodes (41): Antes de abrir un PR, Arquitectura, Búsqueda, Capa de datos, Captura, Captura de audio, Capturas, Cobertura (+33 more)
 
 ### Community 6 - ".save"
-Cohesion: 0.11
-Nodes (22): ModelContext, NoteIndexRecord, .noteID, .tagValues, Bool, Date, Double, Int (+14 more)
+Cohesion: 0.09
+Nodes (27): ModelContext, NoteIndexRecord, .noteID, .tagValues, Bool, Date, Double, Int (+19 more)
 
 ### Community 7 - "TranscriptSegment"
-Cohesion: 0.06
-Nodes (29): Key, NoteMarkdown, Date, Double, Int, String, OnDeviceTranscriber, AsyncThrowingStream (+21 more)
-
-### Community 8 - "VaultPath"
 Cohesion: 0.08
-Nodes (23): DocumentsVaultLocator, URL, FileNoteRepository, .rootURL, NoteIndexWriting, FileManager, String, URL (+15 more)
+Nodes (24): .activeSegmentID, OnDeviceTranscriber, AsyncThrowingStream, Bool, Error, Locale, TimeInterval, Bool (+16 more)
+
+### Community 8 - "FileNoteRepository"
+Cohesion: 0.12
+Nodes (16): DocumentsVaultLocator, FileManager, URL, FileNoteRepository, .rootURL, NoteIndexWriting, FileManager, String (+8 more)
 
 ### Community 9 - "Note"
-Cohesion: 0.12
-Nodes (11): .activeSegmentID, Note, .isEditedByAI, .relativePath, .tags, .title, .transcriptText, Bool (+3 more)
+Cohesion: 0.17
+Nodes (8): Note, .isEditedByAI, .relativePath, .tags, .title, .transcriptText, Bool, String
 
-### Community 10 - "DSNoteCard"
+### Community 10 - "NoteCardModel"
 Cohesion: 0.07
-Nodes (37): CGRect, CGSize, Layout, DSBadge, .body, DSChip, String, Void (+29 more)
+Nodes (34): NoteCardModel, Date, Int, String, TimeInterval, Void, NoteCardModelTests, Bool (+26 more)
 
-### Community 11 - "DSRecordingButton"
-Cohesion: 0.15
-Nodes (16): DSRecordingButton, .body, .innerDisc, DSRecordingButton.State, .accessibilityHint, .accessibilityLabel, .fillColor, .isRecording (+8 more)
+### Community 11 - "AdaptiveColor"
+Cohesion: 0.11
+Nodes (22): EnvironmentValues, DSRecordingButton, .body, .innerDisc, DSRecordingButton.State, .accessibilityHint, .accessibilityLabel, .fillColor (+14 more)
 
-### Community 12 - "NoteID"
-Cohesion: 0.19
-Nodes (8): CustomStringConvertible, RecordingIndexSpy, .lastIndexed, .lastRemoved, NoteID, .description, String, UUID
+### Community 12 - "Añadido"
+Cohesion: 0.10
+Nodes (20): [1.0.0] — 2026-09-27, Arquitectura, Audio, Añadido, Añadido — resumen numérico, Build, Changelog, Corregido (+12 more)
 
 ### Community 13 - "AudioEngineRecorder"
 Cohesion: 0.09
 Nodes (21): AsyncStream, AVAudioFile, AVAudioFormat, AVReadOnlyAudioPCMBuffer, AudioEngineRecorder, CaptureSession, .failedWrite, .isCapturing (+13 more)
 
-### Community 14 - ".enrich"
-Cohesion: 0.23
-Nodes (5): AsyncThrowingStream, Bool, Error, Locale, String
+### Community 14 - "Handler"
+Cohesion: 0.07
+Nodes (24): BaseHTTPRequestHandler, _get_json(), list_models(), _ping(), Cliente del LLM local (Ollama) para el visor 3D. Responsabilidades: * Detectar…, Generador que rinde el texto de la respuesta a medida que llega. Formato de la…, Estado del LLM. `available=True` solo si el servidor responde Y el modelo…, status() (+16 more)
 
 ### Community 15 - "RuleBasedNoteEnricher"
 Cohesion: 0.12
 Nodes (8): RuleBasedNoteEnricher, .availability, AsyncThrowingStream, Error, Locale, String, String, RuleBasedNoteEnricherTests
 
-### Community 16 - "NoteError"
-Cohesion: 0.05
-Nodes (45): Equatable, Error, Mode, editing, reading, DSRecordingPanel, Stage, done (+37 more)
+### Community 16 - "Stage"
+Cohesion: 0.14
+Nodes (17): DSRecordingPanel, Stage, done, enriching, failed, .isFailure, .progress, recording (+9 more)
 
 ### Community 17 - "Testing"
-Cohesion: 0.05
-Nodes (36): ADRs, Arquitectura, Documentos, Modelo de dominio, Paquetes, Archivos, Capa de datos, Detalles que no son evidentes (+28 more)
+Cohesion: 0.18
+Nodes (11): Bloqueo conocido en esta máquina, Cobertura honesta de la navegación, Compilar sin correr, La ruta que funciona: tests en un iPhone real, `NoteSmartData` es iOS-only, y lo dice, Por qué el dominio corre en el Mac, Qué cubren los tests, Testing (+3 more)
 
 ### Community 18 - "DSButton"
 Cohesion: 0.14
 Nodes (17): ButtonStyle, Configuration, Label, DSButton, .body, DSButtonKind, destructive, glass (+9 more)
 
-### Community 19 - "Palette"
-Cohesion: 0.40
-Nodes (4): .body, .body, .outerRing, Palette
+### Community 19 - "Hashable"
+Cohesion: 0.11
+Nodes (19): Hashable, AIAvailability, available, .isAvailable, unavailable, AIUnavailableReason, deviceNotEligible, modelNotReady (+11 more)
 
 ### Community 20 - "RTK Commands by Workflow"
 Cohesion: 0.13
@@ -184,40 +198,40 @@ Cohesion: 0.26
 Nodes (4): NoteFileNaming, Bool, String, NoteFileNamingTests
 
 ### Community 22 - "DSListScaffold"
-Cohesion: 0.31
-Nodes (8): AnyView, DSFloatingToolbar, .body, DSListScaffold, .floatingBar, Bool, Content, String
+Cohesion: 0.16
+Nodes (14): AnyView, NoteEditorView, .body, DSFloatingToolbar, .body, DSListScaffold, .body, .floatingBar (+6 more)
 
 ### Community 23 - "GlassConfig"
-Cohesion: 0.12
-Nodes (15): DSGlassModifier, Content, Emphasis, accent, danger, neutral, GlassConfig, .cornerRadius (+7 more)
+Cohesion: 0.13
+Nodes (14): DSGlassModifier, Content, Emphasis, accent, danger, neutral, GlassConfig, .cornerRadius (+6 more)
 
-### Community 24 - "NoteCardModel"
-Cohesion: 0.19
-Nodes (9): NoteCardModel, Date, Int, String, TimeInterval, NoteCardModelTests, Bool, String (+1 more)
+### Community 24 - "AppEnvironment"
+Cohesion: 0.13
+Nodes (11): AppEnvironment, ModelContainer, Error, String, AppRootView, .body, String, .list (+3 more)
 
-### Community 25 - "AppEnvironment"
-Cohesion: 0.06
-Nodes (32): AppEnvironment, State, failed, preparing, ready, ModelContainer, String, .captureScreen (+24 more)
+### Community 25 - "RecordViewModel"
+Cohesion: 0.15
+Nodes (10): .captureScreen, RecordViewModel, .buttonState, .isBusy, .panel, Bool, Double, Never (+2 more)
 
 ### Community 26 - "SplashView"
-Cohesion: 0.07
-Nodes (26): Animation, App, NoteSmartApp, .body, AppRootView, .body, String, Phase (+18 more)
+Cohesion: 0.17
+Nodes (10): SplashView, .body, .footer, .mark, .subtitle, .wordmark, String, Void (+2 more)
 
 ### Community 27 - "Spacing.swift"
 Cohesion: 0.29
 Nodes (6): CoreGraphics, Metrics, CGFloat, Radius, Spacing, CGFloat
 
 ### Community 28 - "NoteEditorViewModel"
+Cohesion: 0.10
+Nodes (19): AttributedString, NoteEditorScreen, .audioSection, .header, .readingBody, .taskList, .toolbar, .body (+11 more)
+
+### Community 29 - "AudioPlaybackController"
+Cohesion: 0.18
+Nodes (10): AVPlayer, AudioPlaybackController, .isLoaded, .progress, Bool, Double, Never, TimeInterval (+2 more)
+
+### Community 31 - "NoteError"
 Cohesion: 0.05
-Nodes (40): AttributedString, Binding, Font, AppErrorMessage, Error, String, NoteEditorScreen, .audioSection (+32 more)
-
-### Community 29 - "Task"
-Cohesion: 0.09
-Nodes (17): AVPlayer, AudioPlaybackController, .isLoaded, .progress, Bool, Double, Never, TimeInterval (+9 more)
-
-### Community 31 - "RecordingsListView"
-Cohesion: 0.17
-Nodes (9): RecordingsListView, .body, .cards, .list, String, RecordingsListViewModel, .cards, String (+1 more)
+Nodes (42): Equatable, Error, State, failed, preparing, ready, String, Mode (+34 more)
 
 ### Community 32 - "ADR 0001 — Arquitectura en capas y reglas de dependencia"
 Cohesion: 0.29
@@ -231,80 +245,124 @@ Nodes (6): ADR 0002 — El vault markdown es la fuente de verdad, Consecuencias,
 Cohesion: 0.29
 Nodes (6): ADR 0003 — IA on-device con piso determinista, Consecuencias, Contexto, Decisión, Reglas del prompt, Ver también
 
-### Community 35 - "DSEmptyState"
-Cohesion: 0.29
-Nodes (8): .emptyState, DSEmptyState, .body, DSSectionHeader, .body, String, Void, Trailing
+### Community 35 - "RecordingsListView"
+Cohesion: 0.24
+Nodes (10): RecordingsListView, .cards, .emptyState, DSEmptyState, .body, DSSectionHeader, .body, String (+2 more)
 
 ### Community 36 - "ADR 0004 — Liquid Glass sólo en el chrome"
 Cohesion: 0.33
 Nodes (5): ADR 0004 — Liquid Glass sólo en el chrome, Contexto, Decisión, Por qué `GlassConfig` y no `Glass`, Ver también
 
 ### Community 37 - "ADR 0005 — Local-first sin autenticación"
-Cohesion: 0.29
+Cohesion: 0.33
 Nodes (6): ADR 0005 — Local-first sin autenticación, Consecuencias, Contexto, Decisión, Reconsideración: qué significa "Cerrar sesión", Ver también
 
+### Community 38 - "DSIconButton"
+Cohesion: 0.48
+Nodes (6): DSIconButton, .body, Bool, CGFloat, String, Void
+
 ### Community 41 - "RecordHomeView"
-Cohesion: 0.22
+Cohesion: 0.20
 Nodes (12): RecordHomeView, .body, .caption, .captionText, .toolbar, Route, more, note (+4 more)
 
-### Community 43 - "EnrichmentProgress"
-Cohesion: 0.15
-Nodes (15): EnrichmentProgress, EnrichmentSource, .isAI, onDeviceAI, ruleBasedFallback, NoteEnricher, NoteEnrichment, Bool (+7 more)
+### Community 42 - "DSFlowLayout"
+Cohesion: 0.19
+Nodes (13): CGRect, CGSize, Layout, DSFlowLayout, DSTagRow, .body, Row, CGFloat (+5 more)
 
-### Community 45 - "NoteFrontmatter"
-Cohesion: 0.17
-Nodes (17): CaseIterable, Codable, AudioFormat, caf, m4a, AudioRecording, Date, AudioRef (+9 more)
+### Community 43 - "Sendable"
+Cohesion: 0.11
+Nodes (21): NoteEnricher, AudioAuthorizationStatus, authorized, denied, notDetermined, AudioRecorder, ModelInstallProgress, Bool (+13 more)
+
+### Community 44 - "app.js"
+Cohesion: 0.09
+Nodes (44): animate(), applyFocus(), boot(), buildBaseEdges(), buildBaseNodes(), buildFocusEdges(), buildFocusNodes(), buildLabels() (+36 more)
+
+### Community 45 - "VaultPath"
+Cohesion: 0.08
+Nodes (16): Key, NoteMarkdown, Date, Double, Int, String, NoteMarkdownTests, String (+8 more)
+
+### Community 46 - "NoteRepository"
+Cohesion: 0.12
+Nodes (14): Animation, Duration, Motion, Spring, Bool, Double, DateProvider, FixedDateProvider (+6 more)
 
 ### Community 47 - "ProfileView"
 Cohesion: 0.29
 Nodes (8): ProfileView, .body, .vaultDescription, .versionDescription, Int, Int64, String, VaultUsage
 
-### Community 48 - "View"
-Cohesion: 0.31
-Nodes (7): ButtonRole, MoreView, .body, String, Void, CGFloat, View
+### Community 49 - "NoteID"
+Cohesion: 0.13
+Nodes (18): CustomStringConvertible, Identifiable, RecordingIndexSpy, .lastIndexed, .lastRemoved, Edge, .id, Node (+10 more)
 
-### Community 49 - "Hashable"
-Cohesion: 0.25
-Nodes (11): Hashable, Identifiable, Edge, .id, Node, NoteGraph, NoteSearchResult, .id (+3 more)
+### Community 50 - "View"
+Cohesion: 0.16
+Nodes (14): ButtonRole, MoreView, .body, String, Void, String, DSCard, .body (+6 more)
 
-### Community 50 - "DSCard"
-Cohesion: 0.36
-Nodes (6): DSCard, .body, DSSeparator, .body, CGFloat, Content
-
-### Community 51 - ".callAsFunction"
-Cohesion: 0.19
-Nodes (10): CreateNoteFromRecording, Output, Stage, enriching, installingModel, saved, transcribing, AsyncThrowingStream (+2 more)
-
-### Community 53 - "DSAudioLevelMeter"
-Cohesion: 0.36
-Nodes (6): DSAudioLevelMeter, DSProgressBar, .body, Bool, Double, .body
-
-### Community 54 - "Sendable"
+### Community 51 - "AudioFileRef"
 Cohesion: 0.12
-Nodes (19): GraphBuilding, NoteSearch, AudioAuthorizationStatus, authorized, denied, notDetermined, AudioRecorder, ModelInstallProgress (+11 more)
+Nodes (22): CaseIterable, Codable, AudioFileRef, AudioFormat, caf, m4a, AudioRecording, Date (+14 more)
 
-### Community 55 - "DSReadingColumn"
-Cohesion: 0.50
-Nodes (4): .body, DSReadingColumn, .body, Content
+### Community 52 - "layout.py"
+Cohesion: 0.26
+Nodes (11): _community_colors(), compute(), _fibonacci_sphere(), _fit_radius(), _hsv_to_rgb(), main(), Layout 3D por fuerza dirigida (dos niveles) para el grafo de graphify. Niveles:…, Puntos casi uniformes en una esfera unitaria (rama dorada). (+3 more)
 
-### Community 56 - "VaultTag"
-Cohesion: 0.23
-Nodes (8): Comparable, String, VaultTag, .description, .displayText, SearchScope, Bool, Set
+### Community 53 - "Palette"
+Cohesion: 0.21
+Nodes (10): .body, DSAudioLevelMeter, .body, DSProgressBar, .body, Bool, Double, .outerRing (+2 more)
+
+### Community 54 - "Transcriber"
+Cohesion: 0.19
+Nodes (9): Transcriber, Stage, finished, installing, transcribing, AsyncThrowingStream, Error, TranscribeRecording (+1 more)
+
+### Community 55 - "DSTextField"
+Cohesion: 0.31
+Nodes (7): Binding, .body, DSTextField, .body, .field, String, Void
+
+### Community 56 - "Capa de datos"
+Cohesion: 0.29
+Nodes (7): Archivos, Capa de datos, Detalles que no son evidentes, El paquete es iOS-only, Lo que `AudioEngineRecorderTests` no cubre, Tests, Ver también
+
+### Community 57 - "Design System"
+Cohesion: 0.29
+Nodes (7): Botones que no hacen nada, Capas, Design System, La paleta es `ShapeStyle`, no `Color`, Nombres que evitan colisiones con SwiftUI, Ver también, Verificación
+
+### Community 58 - "Typography"
+Cohesion: 0.38
+Nodes (4): Font, .editingBody, CGFloat, Typography
+
+### Community 59 - "Task"
+Cohesion: 0.30
+Nodes (6): MarkdownEditing, Bool, Int, String, Task, Range
+
+### Community 60 - "Release y documentación pública"
+Cohesion: 0.33
+Nodes (6): Al preparar la siguiente release, Estado actual: 1.0.0, Qué tiene que quedar cierto en el `README`, Reglas de escritura, Release y documentación pública, Ver también
+
+### Community 62 - "Presentación"
+Cohesion: 0.33
+Nodes (6): Archivos, Decisiones que no son evidentes, El flujo de pantallas, Presentación, Tests, Ver también
+
+### Community 63 - "NoteSmartApp"
+Cohesion: 0.40
+Nodes (4): App, NoteSmartApp, .body, Scene
+
+### Community 64 - "Arquitectura"
+Cohesion: 0.40
+Nodes (5): ADRs, Arquitectura, Documentos, Modelo de dominio, Paquetes
 
 ## Knowledge Gaps
-- **221 isolated node(s):** `preparing`, `ready`, `failed`, `.vaultDescription`, `.versionDescription` (+216 more)
+- **280 isolated node(s):** `preparing`, `ready`, `failed`, `.vaultDescription`, `.versionDescription` (+275 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `View` connect `View` to `DSEmptyState`, `RecordHomeView`, `DSNoteCard`, `DSRecordingButton`, `ProfileView`, `NoteError`, `DSButton`, `DSCard`, `DSAudioLevelMeter`, `DSListScaffold`, `GlassConfig`, `DSReadingColumn`, `SplashView`, `NoteEditorViewModel`, `RecordingsListView`?**
-  _High betweenness centrality (0.130) - this node is a cross-community bridge._
-- **Why does `Note` connect `Note` to `AudioFileRef`, `.save`, `TranscriptSegment`, `VaultPath`, `NoteID`, `NoteFrontmatter`, `.enrich`, `Hashable`, `.callAsFunction`, `Sendable`, `NoteCardModel`, `AppEnvironment`, `VaultTag`, `NoteEditorViewModel`, `RecordingsListView`?**
-  _High betweenness centrality (0.122) - this node is a cross-community bridge._
-- **Why does `NoteID` connect `NoteID` to `.save`, `TranscriptSegment`, `VaultPath`, `RecordHomeView`, `Note`, `NoteFrontmatter`, `.enrich`, `NoteError`, `Hashable`, `Sendable`, `NoteCardModel`, `NoteEditorViewModel`, `RecordingsListView`?**
-  _High betweenness centrality (0.080) - this node is a cross-community bridge._
+- **Why does `View` connect `View` to `RecordingsListView`, `SwiftUI`, `DSIconButton`, `RecordHomeView`, `NoteCardModel`, `AdaptiveColor`, `DSFlowLayout`, `ProfileView`, `Stage`, `DSButton`, `GlassConfig`, `Palette`, `DSListScaffold`, `DSTextField`, `AppEnvironment`, `SplashView`, `NoteEditorViewModel`?**
+  _High betweenness centrality (0.099) - this node is a cross-community bridge._
+- **Why does `Note` connect `Note` to `VaultTag`, `EnrichmentProgress`, `.save`, `TranscriptSegment`, `FileNoteRepository`, `NoteCardModel`, `Sendable`, `VaultPath`, `NoteRepository`, `NoteID`, `AudioFileRef`, `Hashable`, `AppEnvironment`, `RecordViewModel`, `NoteEditorViewModel`?**
+  _High betweenness centrality (0.082) - this node is a cross-community bridge._
+- **Why does `VaultTag` connect `VaultTag` to `EnrichmentProgress`, `.save`, `FileNoteRepository`, `Note`, `Sendable`, `VaultPath`, `RuleBasedNoteEnricher`, `MarkdownEditingTests`, `NoteID`, `AudioFileRef`, `Hashable`, `Task`, `NoteEditorViewModel`?**
+  _High betweenness centrality (0.063) - this node is a cross-community bridge._
 - **Are the 3 inferred relationships involving `Note` (e.g. with `.addTag()` and `.removeTag()`) actually correct?**
   _`Note` has 3 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 12 inferred relationships involving `VaultPath` (e.g. with `.makeNote()` and `.search()`) actually correct?**
@@ -312,4 +370,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Are the 4 inferred relationships involving `VaultTag` (e.g. with `.tagsRow()` and `.inlineTags()`) actually correct?**
   _`VaultTag` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `preparing`, `ready`, `failed` to the rest of the system?**
-  _221 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _280 weakly-connected nodes found - possible documentation gaps or missing edges._

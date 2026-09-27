@@ -28,6 +28,8 @@ Detalle de reglas de dependencia en
 - [[Design System]] — capas, tokens, build de referencia.
 - [[Presentación]] — composition root, features, navegación y audio.
 - [[Testing]] — cómo correr cada suite y qué depende del simulador.
+- [[Release y documentación pública]] — qué vive en el `README`, qué en el `CHANGELOG` y
+  qué aquí, y cómo preparar la siguiente versión.
 
 ## ADRs
 

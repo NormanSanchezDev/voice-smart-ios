@@ -78,14 +78,17 @@ Obsidian. Sin cuentas, sin servidores, sin red.
   `any NoteRepository`, `any NoteSearch`, `any AudioRecorder`, `any Transcriber` y deja
   los tipos concretos en `private`, así que ningún view model puede llamar un método que
   sólo exista en la implementación.
-- **Domain**: 6 value objects y entities, 7 protocols, 4 casos de uso
+- **Domain**: 14 value objects y entities, 7 protocols, 4 casos de uso
   (`CreateNoteFromRecording`, `TranscribeRecording`, `EnrichTranscript`,
-  `MarkdownEditing`) y 3 enums de error tipados.
+  `MarkdownEditing`) y 3 enums de error tipados (`NoteError`, `TranscriptionError`,
+  `EnrichmentError`).
 - **Cinco ADRs** documentando las decisiones que gobiernan el proyecto: arquitectura en
   capas, vault markdown como fuente de verdad, IA on-device con piso determinista,
   Liquid Glass sólo en el chrome, y local-first sin autenticación.
-- **Grafo de conocimiento del repo** con `graphify`: 1 228 nodos, 2 817 aristas, 67
-  comunidades, god nodes documentados y **cero ciclos de importación**.
+- **Grafo de conocimiento del repo** con `graphify`: el informe completo queda en
+  `graphify-out/GRAPH_REPORT.md`, con comunidades, god nodes y **cero ciclos de
+  importación**. Las métricas exactas viven en ese informe, no aquí, porque el `CHANGELOG`
+  está indexado en el graph.
 
 #### Design System
 
@@ -138,8 +141,8 @@ Obsidian. Sin cuentas, sin servidores, sin red.
 #### Documentación
 
 - `documentation/` como cerebro del proyecto en Obsidian: `arquitectura.md`,
-  `capa-de-datos.md`, `presentacion.md`, `design-system.md`, `testing.md`, más las cinco
-  ADRs enlazadas con `[[wikilinks]]`.
+  `capa-de-datos.md`, `presentacion.md`, `design-system.md`, `testing.md`,
+  `releasing.md`, más las cinco ADRs enlazadas con `[[wikilinks]]`.
 - 26 cadenas de copy en `Localizable.xcstrings`.
 - `README.md` con arquitectura, formato de nota, rutas de build y de test, y una lista
   honesta de limitaciones conocidas.

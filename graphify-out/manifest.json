@@ -325,8 +325,8 @@
     "semantic_hash": ""
   },
   "documentation/arquitectura.md": {
-    "mtime": 1790542439.7350273,
-    "ast_hash": "56f2009d4ba8c9155396f43067388ce7",
+    "mtime": 1790544277.3832211,
+    "ast_hash": "42d978e74fd202580c522a091a891ffa",
     "semantic_hash": ""
   },
   "documentation/capa-de-datos.md": {
@@ -500,8 +500,8 @@
     "semantic_hash": ""
   },
   ".opencode/AGENTS.md": {
-    "mtime": 1790542908.6288145,
-    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "mtime": 1790543136.8216615,
+    "ast_hash": "a2197fb63ad07bc0820556dfe4563445",
     "semantic_hash": ""
   },
   ".opencode/TOOLS.md": {
@@ -510,13 +510,38 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1790542928.2923155,
-    "ast_hash": "15ec392144eeb2bb8ed1f6ac19ea8438",
+    "mtime": 1790544834.8665845,
+    "ast_hash": "7851489da002646fd6b66ff59ff84e6b",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1790542946.943038,
-    "ast_hash": "fb83c5c02e66f584d9cf0e9499983d52",
+    "mtime": 1790544774.3246355,
+    "ast_hash": "d2ea6b177083eaa68efcbd13bfaadb21",
+    "semantic_hash": ""
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1790542982.8519719,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  ".claude/MEMORY.md": {
+    "mtime": 1790542986.038668,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  ".codex/AGENTS.md": {
+    "mtime": 1790543030.1428998,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  ".codex/TOOLS.md": {
+    "mtime": 1790543032.8401854,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "documentation/releasing.md": {
+    "mtime": 1790544171.9881852,
+    "ast_hash": "25adc954c7ecea4a4d62141a2c448625",
     "semantic_hash": ""
   }
 }

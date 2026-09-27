@@ -30,6 +30,8 @@ graphify-out/.graphify_*.json
 graphify-out/.graphify_*.sig
 graphify-out/.graphify_root
 graphify-out/graph.html
+graphify-out/graph3d-layout.json
+graph3d/
 
 # Local agent scratch
 *.xcresult

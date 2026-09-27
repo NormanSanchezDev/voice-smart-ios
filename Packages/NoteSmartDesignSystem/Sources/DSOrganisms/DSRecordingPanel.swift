@@ -6,7 +6,7 @@ import SwiftUI
 /// Live view of the capture pipeline: elapsed time, input level, and which stage the
 /// note is in. One place to look while a note is being created.
 public struct DSRecordingPanel: View {
-    public enum Stage: Sendable {
+    public enum Stage: Sendable, Equatable {
         case recording
         case transcribing(progress: Double?)
         case enriching(progress: Double?)
@@ -51,11 +51,18 @@ public struct DSRecordingPanel: View {
     private let stage: Stage
     private let elapsed: TimeInterval
     private let levels: [Double]
+    private let onRetry: (() -> Void)?
 
-    public init(stage: Stage, elapsed: TimeInterval = 0, levels: [Double] = []) {
+    public init(
+        stage: Stage,
+        elapsed: TimeInterval = 0,
+        levels: [Double] = [],
+        onRetry: (() -> Void)? = nil
+    ) {
         self.stage = stage
         self.elapsed = elapsed
         self.levels = levels
+        self.onRetry = onRetry
     }
 
     public var body: some View {
@@ -86,8 +93,10 @@ public struct DSRecordingPanel: View {
                     DSProgressBar(progress: stage.isFailure ? nil : 1)
                 }
 
-                if case .failed = stage {
-                    DSButton("Reintentar", kind: .secondary) {}
+                // Only rendered when the caller supplies the action: a retry button
+                // wired to nothing is worse than no retry button.
+                if case .failed = stage, let onRetry {
+                    DSButton("Reintentar", kind: .secondary, action: onRetry)
                 }
             }
         }

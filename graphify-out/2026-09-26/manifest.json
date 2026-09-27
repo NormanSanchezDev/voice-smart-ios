@@ -1,0 +1,472 @@
+{
+  "NoteSmart/NoteSmart/NoteSmartApp.swift": {
+    "mtime": 1790475769.6128457,
+    "ast_hash": "232515b14b71f1068805a57457bfa5d4",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmartTests/NoteSmartTests.swift": {
+    "mtime": 1790475974.5968525,
+    "ast_hash": "9e20a84481f47c30b83739f960f8bcb9",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmartUITests/NoteSmartUITests.swift": {
+    "mtime": 1790461236.5798504,
+    "ast_hash": "e797880b2b989857ec411f16294506f2",
+    "semantic_hash": "e797880b2b989857ec411f16294506f2"
+  },
+  "Packages/NoteSmartData/Package.swift": {
+    "mtime": 1790472034.191678,
+    "ast_hash": "860444844753bff765f03406071cff21",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Sources/NoteSmartData/AudioEngineRecorder.swift": {
+    "mtime": 1790473947.7320912,
+    "ast_hash": "7f22d45a0219c833f9ff532e1ca0c776",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Sources/NoteSmartData/DocumentsVaultLocator.swift": {
+    "mtime": 1790473188.4375873,
+    "ast_hash": "c21d721835b54029a3c2d390d0d62380",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Sources/NoteSmartData/FileNoteRepository.swift": {
+    "mtime": 1790474899.7310338,
+    "ast_hash": "2229c54cb99bcb16caaa21848e62a9aa",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Sources/NoteSmartData/NoteFileNaming.swift": {
+    "mtime": 1790473237.476153,
+    "ast_hash": "fad9aa7b61eb58a7321474eac7b748bf",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Sources/NoteSmartData/NoteIndexRecord.swift": {
+    "mtime": 1790474781.0715516,
+    "ast_hash": "fe56824671c58dd2cbcbd2e9b0c91832",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Sources/NoteSmartData/NoteMarkdown.swift": {
+    "mtime": 1790474679.4097333,
+    "ast_hash": "9937d4fbcb9a6529206e288f829c788d",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Sources/NoteSmartData/OnDeviceNoteEnricher.swift": {
+    "mtime": 1790473501.8169594,
+    "ast_hash": "75b389f140d144f3112219adb0bdd544",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Sources/NoteSmartData/OnDeviceTranscriber.swift": {
+    "mtime": 1790473398.7402842,
+    "ast_hash": "ee21fc683f3c59eb8a0dd6f4f9b0d444",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Sources/NoteSmartData/RuleBasedNoteEnricher.swift": {
+    "mtime": 1790474919.017124,
+    "ast_hash": "6eab05d40d85adb250c0ee8bb0eac6e1",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Sources/NoteSmartData/VaultIndexer.swift": {
+    "mtime": 1790473981.5650234,
+    "ast_hash": "3b013e65d068338253fdc78c61389c1f",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Tests/NoteSmartDataTests/FileNoteRepositoryTests.swift": {
+    "mtime": 1790473644.6126494,
+    "ast_hash": "702fa8f9f9a670233dc43137d3ffd7bf",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Tests/NoteSmartDataTests/NoteFileNamingTests.swift": {
+    "mtime": 1790473511.1945596,
+    "ast_hash": "013a1b0c7631bb7f277e1cbde1e15c80",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Tests/NoteSmartDataTests/NoteMarkdownTests.swift": {
+    "mtime": 1790473518.2106662,
+    "ast_hash": "fb99fd2904747c4116717e5fb62ec69c",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Tests/NoteSmartDataTests/RuleBasedNoteEnricherTests.swift": {
+    "mtime": 1790474832.5607307,
+    "ast_hash": "d6902c1b9b52ef8a729b72b44d54dd1c",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartData/Tests/NoteSmartDataTests/VaultIndexerTests.swift": {
+    "mtime": 1790474914.8847718,
+    "ast_hash": "e7c8e736f30e2861cfc6b8197bd71560",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Package.swift": {
+    "mtime": 1790472037.2248476,
+    "ast_hash": "29a1f0eddc7164b6ebdb201c90a0b65b",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSAtoms/DSButton.swift": {
+    "mtime": 1790478434.4239597,
+    "ast_hash": "733a806f949997da39e6c3fa79bafa21",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSAtoms/DSCard.swift": {
+    "mtime": 1790473067.728944,
+    "ast_hash": "a4f9432e0757653f869125cbbb70306a",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSAtoms/DSChip.swift": {
+    "mtime": 1790478434.4245837,
+    "ast_hash": "3e07e912ea60eac05971ec6e5805c88b",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSAtoms/DSIconButton.swift": {
+    "mtime": 1790473067.72863,
+    "ast_hash": "c22e25bd14f0289cc11a324d5e8c8bda",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSAtoms/DSTextField.swift": {
+    "mtime": 1790473067.7338126,
+    "ast_hash": "316347ac2c001e1100db57b4f6a67896",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSAtoms/GlassSurface.swift": {
+    "mtime": 1790478461.2336428,
+    "ast_hash": "c8a64e7dfdbc7d318c10b86fb9c77c84",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSMolecules/DSAudioLevelMeter.swift": {
+    "mtime": 1790478434.4371166,
+    "ast_hash": "ab05383d5ed587db361b93274c24e008",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSMolecules/DSEmptyState.swift": {
+    "mtime": 1790473081.1894667,
+    "ast_hash": "3a18e8fdc729c49cf281d98ee885e2d4",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSMolecules/DSRecordingButton.swift": {
+    "mtime": 1790478434.4340568,
+    "ast_hash": "89f6ac530d39c43d9a9cf6422d632871",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSMolecules/DSTagRow.swift": {
+    "mtime": 1790473107.300586,
+    "ast_hash": "ee4cbded3b8506339f591a51b2022dff",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSOrganisms/DSNoteCard.swift": {
+    "mtime": 1790473116.6742852,
+    "ast_hash": "92f596ab26cb3b8c9ab15e8f2e127a4a",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSOrganisms/DSRecordingPanel.swift": {
+    "mtime": 1790475603.8184996,
+    "ast_hash": "bd2affb6a840d1c7aa44a6ef544239af",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSOrganisms/DSSearchResultRow.swift": {
+    "mtime": 1790473122.9337947,
+    "ast_hash": "dd5a9d7631beff1250b92800d238500f",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSTemplates/DSListScaffold.swift": {
+    "mtime": 1790478479.5809636,
+    "ast_hash": "b7552257b8a2e2b54db24de0ec738207",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSTemplates/DSReadingColumn.swift": {
+    "mtime": 1790473067.742412,
+    "ast_hash": "0f393fe470e4e5e5802e760f3304047c",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSTokens/Glass.swift": {
+    "mtime": 1790478729.3946917,
+    "ast_hash": "fe5bd2d7025792c6662792ac4b83d244",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSTokens/Metrics.swift": {
+    "mtime": 1790473067.7449667,
+    "ast_hash": "7c6be0c816b663a63477c2d3ea8d836e",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSTokens/Motion.swift": {
+    "mtime": 1790472882.2654,
+    "ast_hash": "4a90c15d8cf56d79b16538f24b848476",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSTokens/Palette.swift": {
+    "mtime": 1790478729.3901808,
+    "ast_hash": "044a8252156f14862333a16bd820eef1",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSTokens/Spacing.swift": {
+    "mtime": 1790473008.7057564,
+    "ast_hash": "44ce9dbb9084464de7a158f983a115ca",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSTokens/Typography.swift": {
+    "mtime": 1790473019.02552,
+    "ast_hash": "4260bd7c6ce66d8a522144012b598e1f",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Package.swift": {
+    "mtime": 1790472033.508646,
+    "ast_hash": "7d7ff0420f4debdb881f101759ca22f2",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Entities/AudioRecording.swift": {
+    "mtime": 1790475717.9194584,
+    "ast_hash": "adbed5d85bc5b1ec45d88b18de780a26",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Entities/Note.swift": {
+    "mtime": 1790472270.8136046,
+    "ast_hash": "05b673000187f3e1df436cf0f55d7e4e",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Entities/NoteFrontmatter.swift": {
+    "mtime": 1790472270.810082,
+    "ast_hash": "6ae70e6a22ca3f8bda5ca4aa4ac0021f",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Entities/TranscriptSegment.swift": {
+    "mtime": 1790472270.8146982,
+    "ast_hash": "e537e41b6ef3cc0141d8c30acbd73d10",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Entities/VaultTag.swift": {
+    "mtime": 1790472270.8140306,
+    "ast_hash": "8c828b861c8b85b596642867b44fb2a1",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Errors/Errors.swift": {
+    "mtime": 1790472270.7966888,
+    "ast_hash": "e58fa6fa3177fbbf10b80f2faf766c40",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Protocols/Infrastructure.swift": {
+    "mtime": 1790472270.798879,
+    "ast_hash": "4c394f67adc02e86e2bd865e13254019",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Protocols/NoteEnricher.swift": {
+    "mtime": 1790472270.7986312,
+    "ast_hash": "f1edd4ac7aa153219ae4ab550788b3c1",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Protocols/NoteRepository.swift": {
+    "mtime": 1790472270.7969713,
+    "ast_hash": "2bdb6133d7cb8337e76966ea36540467",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Protocols/NoteSearch.swift": {
+    "mtime": 1790472270.7996447,
+    "ast_hash": "8a549f96b5c91571d17b7daabd11f08a",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/Protocols/Transcription.swift": {
+    "mtime": 1790472270.799323,
+    "ast_hash": "ced713368a84320acf790c67804d212e",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/UseCases/CreateNoteFromRecording.swift": {
+    "mtime": 1790472315.1813667,
+    "ast_hash": "c84e32d2d2c65c513775c30d02ef785d",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/UseCases/EnrichTranscript.swift": {
+    "mtime": 1790472310.364488,
+    "ast_hash": "3b9abf3c7554e2c485b43d1ccaa6b063",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/UseCases/MarkdownEditing.swift": {
+    "mtime": 1790475675.5267553,
+    "ast_hash": "175eab13253dd02b34367d7e9cfbc4e5",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/UseCases/TranscribeRecording.swift": {
+    "mtime": 1790472312.8591332,
+    "ast_hash": "ae74947feb4f1857da94738fe3ea45f2",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/ValueObjects/NoteID.swift": {
+    "mtime": 1790472270.8149893,
+    "ast_hash": "e8359a179661e06008fe103955a88df7",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/ValueObjects/TimeRange.swift": {
+    "mtime": 1790472270.8154106,
+    "ast_hash": "f01f7ee5deaf071bae086138edd45fcc",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Sources/ValueObjects/VaultPath.swift": {
+    "mtime": 1790472270.8151958,
+    "ast_hash": "a64b3c9a93d92bb30f1c6cf613dfe324",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Tests/NoteSmartDomainTests/MarkdownEditingTests.swift": {
+    "mtime": 1790475688.0483882,
+    "ast_hash": "878d15e16ea5ebbb2089f9c1d920ed95",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Tests/NoteSmartDomainTests/UseCaseTests.swift": {
+    "mtime": 1790472284.2326396,
+    "ast_hash": "36eda797df704a9fe5ee99282cefbfb3",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDomain/Tests/NoteSmartDomainTests/ValueObjectTests.swift": {
+    "mtime": 1790472321.63798,
+    "ast_hash": "695c4b5fa2617a2837f71ce051a8df78",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1790466773.361149,
+    "ast_hash": "3394bea65d3f213ebdef6ed8a43ed564",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1790466858.2884223,
+    "ast_hash": "89b639de2940445c4543c7755d790690",
+    "semantic_hash": ""
+  },
+  "documentation/arquitectura.md": {
+    "mtime": 1790476083.9124951,
+    "ast_hash": "56f2009d4ba8c9155396f43067388ce7",
+    "semantic_hash": ""
+  },
+  "documentation/capa-de-datos.md": {
+    "mtime": 1790474105.4956422,
+    "ast_hash": "326a8609e57873cf9839476fee90d94e",
+    "semantic_hash": ""
+  },
+  "documentation/decisions/0001-arquitectura-en-capas.md": {
+    "mtime": 1790478765.0207705,
+    "ast_hash": "5e663ec6abd9689478f2d8269812f51e",
+    "semantic_hash": ""
+  },
+  "documentation/decisions/0002-vault-markdown-fuente-de-verdad.md": {
+    "mtime": 1790474074.438299,
+    "ast_hash": "2d1e82114c9c70ca610f323f702dacf4",
+    "semantic_hash": ""
+  },
+  "documentation/decisions/0003-ia-on-device-con-piso-determinista.md": {
+    "mtime": 1790474081.6907244,
+    "ast_hash": "58e6f3b182bcba097145225f8e150616",
+    "semantic_hash": ""
+  },
+  "documentation/decisions/0004-liquid-glass-solo-en-el-chrome.md": {
+    "mtime": 1790474086.6872346,
+    "ast_hash": "d34b3fd0b5cc213ec2ecadbc90f7c8a6",
+    "semantic_hash": ""
+  },
+  "documentation/decisions/0005-local-first-sin-autenticacion.md": {
+    "mtime": 1790474092.1993191,
+    "ast_hash": "6cea33a91d3f09ca6b8d08449eccf480",
+    "semantic_hash": ""
+  },
+  "documentation/design-system.md": {
+    "mtime": 1790478745.7462027,
+    "ast_hash": "4d87cb80fc088d709ffceaa1e3f6fdb3",
+    "semantic_hash": ""
+  },
+  "documentation/testing.md": {
+    "mtime": 1790476091.051921,
+    "ast_hash": "f656da57cb0d0af379ddca45b7f0d80e",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/DI/AppEnvironment.swift": {
+    "mtime": 1790476130.1118045,
+    "ast_hash": "9134e9cfb38cd2670e8e13d182f43f12",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/DI/AppErrorMessage.swift": {
+    "mtime": 1790475548.1584878,
+    "ast_hash": "75866c86dece693731c44743f2aacee7",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/AppRootView.swift": {
+    "mtime": 1790476758.3009744,
+    "ast_hash": "c80d50ad9aea96e299179d765d179e69",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/NoteEditor/AudioPlaybackController.swift": {
+    "mtime": 1790475837.9429884,
+    "ast_hash": "9daad862beb48523db8bb106da2d24e8",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/NoteEditor/NoteEditorView.swift": {
+    "mtime": 1790478608.9155824,
+    "ast_hash": "fd43632ea3d16a27543ee9da960819a8",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/NoteEditor/NoteEditorViewModel.swift": {
+    "mtime": 1790476133.3353438,
+    "ast_hash": "67eda7856e8692f763e8b8ad1c27c91c",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/NotesList/NotesListView.swift": {
+    "mtime": 1790476758.2902453,
+    "ast_hash": "d7778b34f0b66ce3617a76794d1f267f",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/NotesList/NotesListViewModel.swift": {
+    "mtime": 1790476133.3312871,
+    "ast_hash": "1b41c68e8c577e266612ead6efc3c2f8",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/Record/RecordPanel.swift": {
+    "mtime": 1790478565.5831542,
+    "ast_hash": "e7c931d5f5331f825719e1c609564218",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/Features/Record/RecordViewModel.swift": {
+    "mtime": 1790476133.3310387,
+    "ast_hash": "bedcbce7e3358ab2d797a3086f9e100b",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/RootView.swift": {
+    "mtime": 1790475766.7644641,
+    "ast_hash": "c580b0ec62a0ce91bb1a5a2f79cf8730",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/Support/NoteBody.swift": {
+    "mtime": 1790475934.314384,
+    "ast_hash": "72c089f51691c67137f09b6899363dbb",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmart/Presentation/Support/NoteCardModel.swift": {
+    "mtime": 1790476758.2934768,
+    "ast_hash": "63b4340c2c27afc0f3021c626765daa2",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmartTests/_DataTests/FileNoteRepositoryTests.swift": {
+    "mtime": 1790473644.6126494,
+    "ast_hash": "702fa8f9f9a670233dc43137d3ffd7bf",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmartTests/_DataTests/NoteFileNamingTests.swift": {
+    "mtime": 1790473511.1945596,
+    "ast_hash": "013a1b0c7631bb7f277e1cbde1e15c80",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmartTests/_DataTests/NoteMarkdownTests.swift": {
+    "mtime": 1790473518.2106662,
+    "ast_hash": "fb99fd2904747c4116717e5fb62ec69c",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmartTests/_DataTests/RuleBasedNoteEnricherTests.swift": {
+    "mtime": 1790474832.5607307,
+    "ast_hash": "d6902c1b9b52ef8a729b72b44d54dd1c",
+    "semantic_hash": ""
+  },
+  "NoteSmart/NoteSmartTests/_DataTests/VaultIndexerTests.swift": {
+    "mtime": 1790474914.8847718,
+    "ast_hash": "e7c8e736f30e2861cfc6b8197bd71560",
+    "semantic_hash": ""
+  },
+  "documentation/presentacion.md": {
+    "mtime": 1790478753.7515903,
+    "ast_hash": "462b4a740e48077aa063e1ab341ec59f",
+    "semantic_hash": ""
+  },
+  "Packages/NoteSmartDesignSystem/Sources/DSTokens/AdaptiveColor.swift": {
+    "mtime": 1790478419.8713126,
+    "ast_hash": "803732d5abb179af38abbe7b72b79d05",
+    "semantic_hash": ""
+  }
+}

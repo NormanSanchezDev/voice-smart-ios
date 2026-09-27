@@ -29,9 +29,9 @@ public struct DSAudioLevelMeter: View {
 /// Determinate and indeterminate progress for the transcription/AI pipeline.
 public struct DSProgressBar: View {
     private let progress: Double?
-    private let tint: Color
+    private let tint: AdaptiveColor
 
-    public init(progress: Double?, tint: Color = Palette.accent) {
+    public init(progress: Double?, tint: AdaptiveColor = Palette.accent) {
         self.progress = progress
         self.tint = tint
     }

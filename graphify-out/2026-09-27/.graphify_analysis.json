@@ -1,0 +1,191 @@
+{
+  "communities": {
+    "0": [
+      "notesmart_notesmartuitests_notesmartuitests",
+      "notesmart_notesmartuitests_notesmartuitests_notesmartuitests",
+      "notesmart_notesmartuitests_notesmartuitests_notesmartuitests_setupwitherror",
+      "notesmart_notesmartuitests_notesmartuitests_notesmartuitests_teardownwitherror",
+      "notesmart_notesmartuitests_notesmartuitests_notesmartuitests_testexample",
+      "notesmart_notesmartuitests_notesmartuitests_notesmartuitests_testlaunchperformance",
+      "xctest",
+      "xctestcase"
+    ],
+    "1": [
+      "combine",
+      "foundation",
+      "notesmart_notesmart_item",
+      "notesmart_notesmart_presentation_features_signin_model_signinuistate",
+      "notesmart_notesmart_presentation_features_signin_signinviewmodel",
+      "notesmart_notesmart_presentation_features_welcome_welcomeviewmodel",
+      "notesmart_notesmart_presentation_features_welcome_welcomeviewmodel_welcomeviewmodel"
+    ],
+    "2": [
+      "localizedstringkey",
+      "localizedstringresource",
+      "notesmart_notesmart_presentation_features_signin_model_signinuistate_signinuistate",
+      "notesmart_notesmart_presentation_features_signin_signinviewmodel_signinviewmodel",
+      "notesmart_notesmart_presentation_features_signin_signinviewmodel_signinviewmodel_dosignin",
+      "notesmart_notesmart_presentation_features_signin_signinviewmodel_signinviewmodel_init",
+      "observableobject"
+    ],
+    "3": [
+      "notesmart_notesmart_contentview_contentview",
+      "notesmart_notesmart_contentview_contentview_body",
+      "notesmart_notesmart_notesmartapp_notesmartapp_body",
+      "notesmart_notesmart_presentation_features_welcome_welcomeview",
+      "notesmart_notesmart_presentation_features_welcome_welcomeview_welcomeview",
+      "notesmart_notesmart_presentation_features_welcome_welcomeview_welcomeview_body",
+      "view"
+    ],
+    "4": [
+      "notesmart_notesmart_contentview",
+      "notesmart_notesmart_notesmartapp",
+      "notesmart_notesmart_presentation_features_signin_signinview",
+      "notesmart_notesmart_presentation_features_signin_signinview_init",
+      "swiftdata",
+      "swiftui"
+    ],
+    "5": [
+      "app",
+      "modelcontainer",
+      "notesmart_notesmart_notesmartapp_notesmartapp",
+      "scene"
+    ],
+    "6": [
+      "notesmart_notesmarttests_notesmarttests",
+      "notesmart_notesmarttests_notesmarttests_notesmarttests",
+      "notesmart_notesmarttests_notesmarttests_notesmarttests_example",
+      "testing"
+    ],
+    "7": [
+      "date",
+      "notesmart_notesmart_item_item",
+      "notesmart_notesmart_item_item_init"
+    ]
+  },
+  "cohesion": {
+    "0": 0.25,
+    "1": 0.3333333333333333,
+    "2": 0.3333333333333333,
+    "3": 0.3333333333333333,
+    "4": 0.4,
+    "5": 0.5,
+    "6": 0.5,
+    "7": 1.0
+  },
+  "gods": [
+    {
+      "id": "notesmart_notesmart_presentation_features_signin_signinviewmodel_signinviewmodel",
+      "label": "SignInViewModel",
+      "degree": 6
+    },
+    {
+      "id": "notesmart_notesmartuitests_notesmartuitests_notesmartuitests",
+      "label": "NoteSmartUITests",
+      "degree": 6
+    },
+    {
+      "id": "notesmart_notesmart_notesmartapp_notesmartapp",
+      "label": "NoteSmartApp",
+      "degree": 5
+    },
+    {
+      "id": "notesmart_notesmart_presentation_features_signin_model_signinuistate_signinuistate",
+      "label": "SignInUIState",
+      "degree": 5
+    },
+    {
+      "id": "notesmart_notesmart_contentview_contentview",
+      "label": "ContentView",
+      "degree": 4
+    },
+    {
+      "id": "notesmart_notesmart_presentation_features_welcome_welcomeview_welcomeview",
+      "label": "WelcomeView",
+      "degree": 4
+    },
+    {
+      "id": "swiftdata",
+      "label": "SwiftData",
+      "degree": 3
+    },
+    {
+      "id": "notesmart_notesmart_item_item",
+      "label": "Item",
+      "degree": 3
+    },
+    {
+      "id": "notesmart_notesmart_contentview_contentview_body",
+      "label": ".body",
+      "degree": 2
+    },
+    {
+      "id": "notesmart_notesmart_notesmartapp_notesmartapp_body",
+      "label": ".body",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "init()",
+      "target": "SignInViewModel",
+      "source_files": [
+        "NoteSmart/NoteSmart/Presentation/Features/SignIn/SIgnInView.swift",
+        "NoteSmart/NoteSmart/Presentation/Features/SignIn/SignInViewModel.swift"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities; peripheral node `init()` unexpectedly reaches hub `SignInViewModel`"
+    },
+    {
+      "source": ".body",
+      "target": "ContentView",
+      "source_files": [
+        "NoteSmart/NoteSmart/NoteSmartApp.swift",
+        "NoteSmart/NoteSmart/ContentView.swift"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source"
+    },
+    {
+      "source": ".body",
+      "target": "WelcomeView",
+      "source_files": [
+        "NoteSmart/NoteSmart/ContentView.swift",
+        "NoteSmart/NoteSmart/Presentation/Features/Welcome/WelcomeView.swift"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source"
+    },
+    {
+      "source": "SignInViewModel",
+      "target": "SignInUIState",
+      "source_files": [
+        "NoteSmart/NoteSmart/Presentation/Features/SignIn/SignInViewModel.swift",
+        "NoteSmart/NoteSmart/Presentation/Features/SignIn/Model/SignInUIState.swift"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `SwiftUI` connect `SwiftUI` to `Foundation`, `ContentView`?",
+      "why": "High betweenness centrality (0.215) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `SignInUIState` connect `SignInViewModel` to `Foundation`?",
+      "why": "High betweenness centrality (0.107) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `.body`, `WelcomeViewModel`, `Testing` to the rest of the system?",
+      "why": "4 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

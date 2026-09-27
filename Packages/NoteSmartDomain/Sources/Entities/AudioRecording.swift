@@ -42,9 +42,9 @@ public struct AudioRecording: Hashable, Sendable, Identifiable {
         self.format = format
     }
 
-    public var file: AudioFileRef {
-        AudioFileRef(url: URL(fileURLWithPath: fileName), locale: Locale.current, format: format)
-    }
+    // No `file` accessor on purpose: the recording knows its name, not where the
+    // vault lives. Whoever holds the `VaultLocator` resolves the full URL, so the
+    // only way to get one is to ask the layer that can actually answer.
 }
 
 /// A normalised input level plus elapsed time, streamed while recording.

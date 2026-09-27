@@ -91,7 +91,7 @@ struct DSButtonStyle: ButtonStyle {
             .animation(Motion.Spring.gentle, value: configuration.isPressed)
     }
 
-    private var foreground: Color {
+    private var foreground: AdaptiveColor {
         switch kind {
         case .primary, .destructive: Palette.textOnAccent
         case .secondary: Palette.accent

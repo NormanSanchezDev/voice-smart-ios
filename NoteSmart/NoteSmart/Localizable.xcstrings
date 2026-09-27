@@ -1,6 +1,82 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "¿Cerrar sesión?" : {
+
+    },
+    "¿Eliminar todos los datos?" : {
+
+    },
+    "%@, %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@, %2$@"
+          }
+        }
+      }
+    },
+    "Abriendo el vault" : {
+
+    },
+    "Cancelar" : {
+
+    },
+    "Carpeta: %@" : {
+
+    },
+    "Cerrar sesión" : {
+
+    },
+    "El archivo de audio no está en el vault." : {
+
+    },
+    "El archivo markdown se borra del vault. El audio se queda en Vault/Recordings." : {
+
+    },
+    "El transcript se guarda aparte, así que reescribir la prosa no rompe el audio." : {
+
+    },
+    "El vault se bloquea y tendrás que abrirlo de nuevo en este dispositivo." : {
+
+    },
+    "Eliminar esta nota?" : {
+
+    },
+    "Eliminar nota" : {
+
+    },
+    "Eliminar todo" : {
+
+    },
+    "Entendido" : {
+
+    },
+    "Grabaciones previas" : {
+
+    },
+    "La transcripción y el resumen se generan en este dispositivo. Ninguna grabación ni nota se sube a un servidor, porque no hay servidor. Desinstalar la app elimina el vault." : {
+
+    },
+    "Más" : {
+
+    },
+    "No se pudo guardar" : {
+
+    },
+    "NoteSmart" : {
+
+    },
+    "NoteSmart no tiene cuentas ni servidores. Las notas y el audio viven solo en este dispositivo." : {
+
+    },
+    "Perfil" : {
+
+    },
+    "Se borran las notas y los audios de este dispositivo. No hay copia en ningún otro sitio." : {
+
+    },
     "sign_in_password_txt" : {
       "comment" : "Password text",
       "extractionState" : "manual",
@@ -24,6 +100,9 @@
           }
         }
       }
+    },
+    "Título" : {
+
     }
   },
   "version" : "1.3"

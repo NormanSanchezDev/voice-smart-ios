@@ -33,6 +33,53 @@ public enum MarkdownEditing: Sendable {
         return afterMarker..<close.upperBound
     }
 
+    /// A task-list item found in a body.
+    public struct Task: Hashable, Sendable {
+        /// Position in document order, which is what `toggleTask(in:at:)` counts.
+        public let index: Int
+        /// Line the checkbox lives on, for callers that need to locate it.
+        public let line: Int
+        public let isChecked: Bool
+        /// The item text with the marker and the bullet removed.
+        public let text: String
+
+        public init(index: Int, line: Int, isChecked: Bool, text: String) {
+            self.index = index
+            self.line = line
+            self.isChecked = isChecked
+            self.text = text
+        }
+    }
+
+    /// Every task-list item in a body, in document order.
+    ///
+    /// Exposed so a checklist can be drawn from the same parser that `toggleTask`
+    /// uses. A second, independent scan in the UI could disagree about what counts as
+    /// a task and end up ticking the wrong line.
+    public static func tasks(in body: String) -> [Task] {
+        var found: [Task] = []
+
+        for (lineIndex, line) in body.components(separatedBy: "\n").enumerated() {
+            guard let box = checkboxRange(in: line) else { continue }
+            var text = line
+            text.replaceSubrange(box, with: "")
+            let trimmed = text
+                .trimmingCharacters(in: .whitespaces)
+                .trimmingCharacters(in: CharacterSet(charactersIn: "-*+ "))
+                .trimmingCharacters(in: .whitespaces)
+            found.append(
+                Task(
+                    index: found.count,
+                    line: lineIndex,
+                    isChecked: line[box].contains("x"),
+                    text: trimmed
+                )
+            )
+        }
+
+        return found
+    }
+
     /// Every `[[target]]` and `[[target|alias]]` in a body, in document order.
     public static func wikilinks(in body: String) -> [String] {
         var found: [String] = []

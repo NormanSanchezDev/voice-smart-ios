@@ -48,7 +48,7 @@ public struct DSBadge: View {
     public enum Tone: Sendable {
         case neutral, accent, success, warning, danger
 
-        var color: Color {
+        var color: AdaptiveColor {
             switch self {
             case .neutral: Palette.textTertiary
             case .accent: Palette.accent

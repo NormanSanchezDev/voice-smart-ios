@@ -53,6 +53,52 @@ struct MarkdownEditingTests {
         }
     }
 
+    @Test("Lists tasks with the index toggleTask expects")
+    func listTasks() {
+        let body = """
+        # Shopping
+
+        - [ ] milk
+        * [x] bread
+          - [ ] not a task at the wrong depth is still a task
+        prose with array[0] = 1
+        """
+        let tasks = MarkdownEditing.tasks(in: body)
+
+        #expect(tasks.map(\.index) == [0, 1, 2])
+        #expect(tasks.map(\.isChecked) == [false, true, false])
+        #expect(tasks.map(\.text) == ["milk", "bread", "not a task at the wrong depth is still a task"])
+        #expect(tasks.map(\.line) == [2, 3, 4])
+    }
+
+    @Test("Every listed task toggles back at its own index")
+    func listTasksRoundTrips() throws {
+        let body = "- [ ] a\n- [x] b\n- [ ] c"
+        let tasks = MarkdownEditing.tasks(in: body)
+
+        for task in tasks {
+            let toggled = try MarkdownEditing.toggleTask(in: body, at: task.index)
+            #expect(MarkdownEditing.tasks(in: toggled)[task.index].isChecked != task.isChecked)
+        }
+    }
+
+    @Test("Finds no tasks in prose")
+    func listTasksEmpty() {
+        #expect(MarkdownEditing.tasks(in: "just prose") == [])
+        #expect(MarkdownEditing.tasks(in: "") == [])
+        #expect(MarkdownEditing.tasks(in: "array[0] = 1") == [])
+    }
+
+    @Test("Counts a fenced task, because toggleTask would too")
+    func listTasksIgnoresFences() throws {
+        // Fence awareness would be nicer, but `tasks(in:)` has to agree with
+        // `toggleTask(in:at:)` on what a task is. If only one of them looked inside
+        // code fences, the indices would drift and the UI would tick the wrong line.
+        let body = "```\n- [ ] fenced\n```"
+        #expect(MarkdownEditing.tasks(in: body).map(\.index) == [0])
+        #expect(try MarkdownEditing.toggleTask(in: body, at: 0) == "```\n- [x] fenced\n```")
+    }
+
     @Test("Extracts wikilinks including aliases")
     func wikilinks() {
         let body = """

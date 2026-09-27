@@ -71,7 +71,7 @@ private extension DSRecordingButton.State {
         if case .recording = self { true } else { false }
     }
 
-    var fillColor: Color {
+    var fillColor: AdaptiveColor {
         switch self {
         case .idle: Palette.recording
         case .recording: Palette.recording

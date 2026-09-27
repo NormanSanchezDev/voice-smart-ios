@@ -12,10 +12,11 @@ public enum GlassConfig {
     /// Shape of floating glass chrome.
     public static var cornerRadius: CGFloat { Radius.l }
 
-    /// Subtle tint layered over the material, per elevation.
-    public static func tint(for emphasis: Emphasis) -> Color {
+    /// Subtle tint layered over the material, per elevation. Stays a token so
+    /// `dsGlass` can resolve it against the surface it is drawn on.
+    public static func tint(for emphasis: Emphasis) -> AdaptiveColor {
         switch emphasis {
-        case .neutral: Color(light: 0xFFFFFF, dark: 0x1C1C22)
+        case .neutral: AdaptiveColor(light: 0xFFFFFF, dark: 0x1C1C22)
         case .accent: Palette.accentSoft.opacity(0.7)
         case .danger: Palette.recordingSoft.opacity(0.8)
         }
